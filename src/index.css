@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url('/3ecdcf1e38babe4ae5d69724fb3f9413.jpg') no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  max-width: 100%;
+}

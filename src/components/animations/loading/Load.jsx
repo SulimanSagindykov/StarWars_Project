@@ -1,0 +1,9 @@
+import './Load.css';
+
+const Load = () => {
+    return(
+        <div className="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+    )
+}
+
+export default Load;

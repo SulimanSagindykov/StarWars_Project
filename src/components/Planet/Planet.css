@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap');
+.planet-container {
+    position: relative;     top: 90px;
+    left: 0;    height: auto;
+    width: 80%;     margin: 0 auto; 
+    padding: 2rem;     background: linear-gradient(
+        to right bottom,        rgba(255, 255, 255, 0.7), 
+        rgba(255, 255, 255, 0.9)     );
+    border-radius: 2rem;    display: flex;
+    flex-direction: column;     align-items: center; 
+    border: 1px solid rgba(255, 255, 255, 0.5);    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    overflow: hidden; }
+.planet-container img {
+    height: 200px;    width: 200px; 
+    border-radius: 50%;     object-fit: cover; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);     margin-top: 1rem; 
+    border: 3px solid white;}
+.planet-container .basic-info {
+    text-align: center;   padding: 1rem;
+}
+.planet-container .basic-info h1 {    font-family: 'Permanent Marker', cursive;
+    color: #5C5C5C;    margin-bottom: 1rem; 
+}
+.planet-container .additional-info {    background: rgba(255, 255, 255, 0.8); 
+    margin: 1rem;    padding: 1rem;
+    border-radius: 1rem;     width: calc(100% - 2rem); 
+    box-sizing: border-box; 
+}
+.planet-container .additional-info h3 {    font-family: 'Josefin Sans', sans-serif;
+    color: #333;     margin-bottom: 0.5rem; 
+}

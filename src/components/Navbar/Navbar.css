@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+.navbar {
+    font-family: 'Monoton', cursive;
+    z-index: 111;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 80px;
+    width: 100%;
+    background: rgba(255, 255,255, 0.4);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.navbar-logo {
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 50px;
+}
+
+.navbar-desc {
+    font-size: 10px;
+    font-family: cursive;
+    margin-left: 100px;
+}
+
+.navbar-menu {
+    display: flex;
+    list-style: none;
+}
+
+.navbar-menu .nav-links {
+    margin: 10px 20px;
+    padding: 12px;
+    text-decoration: none;
+    background: -webkit-linear-gradient(rgb(169, 52, 247), #12e2d1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 30px;
+    font-family: 'Rampart One', cursive;
+    transition: 0.5s;
+    border-radius: 2rem;
+    border: none;
+}
+
+.navbar-menu .nav-links:hover {
+    background: -webkit-linear-gradient(rgb(4, 23, 192), #fa1515);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.menu-icon {
+    display: none;
+}
+
+@media screen and (max-width:960px){
+    .navbar-menu {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        position: absolute;
+        min-height: 100vh;
+        min-width: 100%;
+        background: rgb(134, 128, 128);
+        top: 80px;
+        left: -120%;
+        transition: 0.7s;
+    }
+    .navbar-logo {
+        font-size: 35px;
+        margin-left: 10px;
+    }
+
+    .navbar-menu .nav-links {
+        margin-top: 20px;
+        text-decoration: none;
+        color: black;
+    }
+    
+
+    .navbar-menu.active {
+        left: 0;
+    }
+    .menu-icon {
+        display: block;
+        margin-right: 5px;
+        font-size: 25px;
+    }
+
+    .navbar-li {
+        margin-bottom: 20px;
+        border: 1px solid black;
+        width: 100%;
+        left: 0;
+        margin-top: 1px;
+        text-align: center;
+        padding: 10px 20px;
+        background-color: white;
+    }
+}

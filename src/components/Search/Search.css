@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap');
+
+
+.search-container {
+    position: absolute;
+    top: 90px;
+    left: 0;
+    height: auto;
+    width: 90%;
+    background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.6)
+  );
+    margin-left: 5%;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: row;
+    border-top:  2px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    justify-content: center;
+}
+
+.search-container .form {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.search-container .form h1 {
+    margin-right: 10px;
+    text-shadow: 1px 1px 5px rgb(136, 122, 122);
+    color: white;
+    font-weight: 20px;
+}
+
+.search-container .form input {
+    font-family: 'Josefin Sans', sans-serif;
+    border: none;
+    outline: none;
+    color: rgba(165, 26, 142, 0.623);
+    border-bottom: 1px solid rgb(36, 248, 255);
+    background: transparent;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.search-container .center {
+    position: absolute;
+    left: 50%;
+    top: 155%;
+    transform: translate(-50%, -50%);
+
+}
+
+
+.search-container .form button {
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 10px 40px;
+    font-family: 'Josefin Sans', sans-serif;
+    background: rgb(23, 159, 238);
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    box-shadow: 0 0 10px rgb(27, 176, 245);
+    margin-left: 15px;
+    border-radius: 50px;
+}
+
+.search-container .suggestion {
+    position: absolute;
+    margin-top: 200px;
+    color: white;
+    left: 50%;
+    list-style: none;
+    transform: translate(-50%, 0);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.suggestion h1 {
+    font-size: 50px;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-bottom: 25px;
+    color: rgb(14, 112, 168);
+    text-shadow: 1px 1px 3px rgb(34, 245, 245);
+}
+
+
+
+.suggestion .item {
+    font-weight: 700;
+    font-family: 'Josefin Sans', sans-serif;
+    border: 1px solid white;
+    text-align: center;
+    width: 80%;
+    text-decoration: none;
+    background: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.7),
+        rgba(37, 212, 235, 0.466)
+      );
+    border-radius: 2rem;
+    justify-content: center;
+    border-top: 3px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+    margin-bottom: 25px;
+    padding: 10px 20px;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    font-size: 25px;
+}
+
+@media screen and (max-width:960px) {
+        .search-container .form {
+            display: flex;
+            flex-direction: column;
+         
+        }
+
+        .search-container .form input {
+            margin-top: 25px;
+            margin-bottom: 25px;
+        }
+
+        .suggestion  {
+            position: absolute;
+            top: 40%;
+        }
+
+        
+  }
