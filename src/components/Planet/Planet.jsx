@@ -52,7 +52,7 @@ const Planet = () => {
   }; 
  
   const loadData = async (name) => { 
-    const res = await fetch(`https://swapi.dev/api/planets/?search=${name}`); 
+    const res = await fetch(`https://swapi.tech/api/planets/?search=${name}`); 
     const data = await res.json(); 
     if (data.results.length > 0) { 
       setPlanetData(data.results[0]); 

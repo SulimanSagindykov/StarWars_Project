@@ -28,7 +28,7 @@ const Search = () => {
       try {
         const responses = await Promise.all(
           searchCategories.map((category) =>
-            axios.get(`https://swapi.dev/api/${category}/?search=${searchTerm}`)
+            axios.get(`https://swapi.tech/api/${category}/?search=${searchTerm}`)
           )
         );
         const suggestedItems = responses
